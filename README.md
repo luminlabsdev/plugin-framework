@@ -1,7 +1,7 @@
 <div align="center">
 
-# Template
+# Lumin Plugin Framework
 
-A template for future reference when creating open source projects.
+An extension of Lumin Framework with added plugin support and methods.
 
 </div>

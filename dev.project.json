@@ -1,12 +1,12 @@
 {
 	"legacyScripts": false,
-	"name": "PROJECT",
+	"name": "PluginFramework",
 	"tree": {
 		"$className": "DataModel",
 		"ReplicatedStorage": {
 			"Packages": {
 				"$path": "Packages",
-				"PROJECT": {
+				"plugin_framework": {
 					"$path": "src"
 				}
 			},
