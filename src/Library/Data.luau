@@ -1,6 +1,6 @@
 -- Variables
 
-local plugin: Plugin = script:FindFirstAncestor("Plugin")
+local plugin: Plugin = script:FindFirstAncestorWhichIsA("Plugin")
 local Cache = {}
 
 -- Functions
