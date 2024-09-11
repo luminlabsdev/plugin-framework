@@ -15,10 +15,11 @@ local Menu = require(Library.Menu)
 
 return {
 	Start = Lumin.Start,
-	Controller = Lumin.Controller,
-	Expect = Lumin.Expect,
+    OnStart = Lumin.OnStart,
+	New = Lumin.New,
 	Worker = Lumin.Worker,
-	Signal = Lumin.Signal,
+    Load = Lumin.Load,
+    version = "0.2.0",
 
 	Unloading = plugin.Unloading,
 

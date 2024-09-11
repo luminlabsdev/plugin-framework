@@ -1,5 +1,5 @@
 {
-	"name": "PluginFramework",
+	"name": "framework",
 	"tree": {
 		"$path": "src"
 	}
