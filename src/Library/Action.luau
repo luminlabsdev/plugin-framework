@@ -5,7 +5,7 @@ local plugin: Plugin = script:FindFirstAncestorWhichIsA("Plugin")
 
 -- Functions
 
-local function new(
+local function New(
 	name: string,
 	description: string,
 	icon: string,
@@ -20,5 +20,5 @@ end
 -- Module
 
 return {
-    new = new,
+    New = New,
 }

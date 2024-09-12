@@ -3,7 +3,7 @@
 local HttpService = game:GetService("HttpService")
 local plugin: Plugin = script:FindFirstAncestorWhichIsA("Plugin")
 
-local Types = require(script.Parent.Parent.Types)
+local Types = require(script.Parent.Parent.Parent.Types)
 
 local Index = {}
 Index.__index = Index
@@ -35,7 +35,7 @@ local function PluginMenu(name: string, children: Types.MenuChildren, icon: stri
 	return Menu
 end
 
-local function new(name: string, children: Types.MenuChildren, icon: string?)
+local function New(name: string, children: Types.MenuChildren, icon: string?)
 	local self = setmetatable({
 		Menu = PluginMenu(name, children, icon or ""),
 	}, Index)
@@ -60,5 +60,5 @@ end
 -- Module
 
 return {
-	new = new,
+	New = New,
 }

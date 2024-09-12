@@ -1,7 +1,7 @@
-local Framework = require(script.Parent.plugin_framework)
+local Framework = require(script.Parent.pluginframework)
 local Bool = Instance.new("BoolValue")
 
-local Menu = Framework.Menu.new("TestingMenu", {
+local Menu = Framework.Menu.New("TestingMenu", {
 	{ "ActionA", "A", "rbxasset://textures/loading/robloxTiltRed.png" },
 	{ "ActionB", "B", "rbxasset://textures/loading/robloxTilt.png" },
 	{
@@ -23,6 +23,6 @@ end)
 Bool.Name = "Toggle Menu"
 Bool.Parent = game
 
-Framework.Action.new("Shortcut", "A test shortcut", "rbxasset://textures/whiteCircle.png", function()
+Framework.Action.New("Shortcut", "A test shortcut", "rbxasset://textures/whiteCircle.png", function()
 	print("You did it!")
 end)
