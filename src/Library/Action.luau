@@ -5,6 +5,11 @@ local plugin: Plugin = script:FindFirstAncestorWhichIsA("Plugin")
 
 -- Functions
 
+--[=[
+	Creates a new plugin action that can be bound to a keycode or placed in studio's topbar.
+
+	[Learn More](https://luminlabsdev.github.io/plugin-framework/api/action#new)
+]=]
 local function New(
 	name: string,
 	description: string,

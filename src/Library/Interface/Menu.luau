@@ -35,6 +35,11 @@ local function PluginMenu(name: string, children: Types.MenuChildren, icon: stri
 	return Menu
 end
 
+--[=[
+	Creates a new plugin menu that is visually similar to a context menu.
+
+	[Learn More](https://luminlabsdev.github.io/plugin-framework/api/menu#new)
+]=]
 local function New(name: string, children: Types.MenuChildren, icon: string?)
 	local self = setmetatable({
 		Menu = PluginMenu(name, children, icon or ""),
@@ -42,14 +47,30 @@ local function New(name: string, children: Types.MenuChildren, icon: string?)
 	return self
 end
 
+--[=[
+	Appends a new menu to the parent menu.
+
+	[Learn More](https://luminlabsdev.github.io/plugin-framework/api/menu#append)
+]=]
 function Index.Append(self: any, children: Types.MenuChildren)
 	self.Menu:AddMenu()
 end
 
+--[=[
+	Clears the menu, removing any items left inside.
+
+	[Learn More](https://luminlabsdev.github.io/plugin-framework/api/menu#clear)
+]=]
 function Index.Clear(self: any)
     self.Menu:Clear()
 end
 
+--[=[
+	Shows the menu, and runs the provided callback giving the chosen `PluginAction` as an
+    argument. The callback will not run if the user does not choose an option.
+
+	[Learn More](https://luminlabsdev.github.io/plugin-framework/api/menu#show)
+]=]
 function Index.Show(self: any, callback: (id: PluginAction) -> ())
     local Identifier = self.Menu:ShowAsync()
     if Identifier then
