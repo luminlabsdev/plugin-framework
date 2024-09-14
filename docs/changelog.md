@@ -15,6 +15,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixes
+
+- Fixed a bug with an invalid `.Widget` prop
+
+### Changed
+
+- Changed the framework version to rc9
+
 ## [0.4.0] - 2024-09-13
 
 ### Added
