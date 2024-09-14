@@ -32,7 +32,6 @@ return {
     -- Interface
 	Menu = Interface.Menu,
     Toolbar = Interface.Toolbar,
-    Widget = Interface.Widget,
 
     -- Plugin
 	Plugin = plugin,
