@@ -1,6 +1,8 @@
 -- Variables
 
+local Packages = script.Parent.Parent.Parent
 local plugin: Plugin = script:FindFirstAncestorWhichIsA("Plugin")
+local Debugger = require(Packages.debugger)
 local Cache = {}
 
 -- Functions
@@ -15,7 +17,7 @@ local function Get(key: string, useCache: boolean?): any
 		return plugin:GetSetting(key)
 	end
 	local Result = Cache[key]
-	assert(Result, "No such key found in cache")
+	Debugger.Assert(Result, "KeyNotFound", key)
 	return Result
 end
 
@@ -24,8 +26,7 @@ end
 
 	[Learn More](https://luminlabsdev.github.io/plugin-framework/api/data#set)
 ]=]
-local function Set(key: string, value: any, ignoreCacheIndex: boolean?)
-	assert(ignoreCacheIndex == false and Cache[key], "No such key found in cache")
+local function Set(key: string, value: any)
 	Cache[key] = value
 end
 

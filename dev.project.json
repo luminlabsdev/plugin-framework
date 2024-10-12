@@ -1,5 +1,5 @@
 {
-	"legacyScripts": true,
+	"emitLegacyScripts": true,
 	"name": "framework",
 	"tree": {
 		"$className": "DataModel",

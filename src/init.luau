@@ -16,11 +16,9 @@ local Interface = require(Library.Interface)
 return {
     -- Framework
 	Start = Lumin.Start,
-    OnStart = Lumin.OnStart,
 	New = Lumin.New,
-	Worker = Lumin.Worker,
-    Load = Lumin.Load,
-    version = "0.3.0", -- Uses plugin framework version
+	Lifecycle = Lumin.Lifecycle,
+    version = "0.6", -- Uses plugin framework version
 
     -- Unloading
 	Unloading = plugin.Unloading,
